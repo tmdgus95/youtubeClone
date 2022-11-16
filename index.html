@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- SEO -->
+        <meta name="author" content="조승현" />
+        <meta name="title" content="유튜브" />
+        <meta name="keywords" content="유튜브 연습" />
+        <meta name="description" content="유튜브 연습" />
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="유튜브 연습" />
+        <meta property="og:description" content="유튜브 연습" />
+        <meta property="og:site_name" content="유튜브 연습" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+
+        <!-- Favicon -->
+        <!-- <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="images/icon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="images/icon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="images/icon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="images/icon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="images/icon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        /> -->
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <title>유튜브 연습</title>
+
+        <!-- jQuery -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- IE 9 이하는 HTML5 태그를 지원하지 않는다. -->
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+
+        <!-- CSS3 적용 -->
+        <script src="js/prefixfree.min.js"></script>
+
+        <!-- css 초기화 -->
+        <link rel="stylesheet" href="css/normalize.css" />
+
+        <link rel="stylesheet" href="css/main.css" />
+        <script
+            src="https://kit.fontawesome.com/541f726852.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/index.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <!-- 헤더 -->
+            <header class="header">
+                <div class="logo">
+                    <i class="fa-brands fa-youtube"></i><span>Youtube</span>
+                </div>
+                <div class="search">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+            </header>
+            <!-- 비디오 -->
+            <div class="video">
+                <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/XBZMdNBj4G0?autoplay=1&mute=1"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            <div class="wide-mode">
+                <div class="wide-mode-right">
+                    <!-- 타이틀/버튼 -->
+                    <div class="title">
+                        <span class="hash">#DreamCoding #DreamCoders #Jo</span>
+                        <div class="content">
+                            <span
+                                >Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Exercitationem explicabo
+                                nostrum ipsum eligendi ipsam beatae at neque
+                                aliquid. Eligendi, asperiores! Cupiditate,
+                                tempore? Quasi cupiditate dolores reprehenderit
+                                officiis ipsa corporis labore.</span
+                            >
+                            <button class="toggle-btn">
+                                <i class="fas fa-caret-down"></i>
+                            </button>
+                        </div>
+                        <span class="view">1M views 1 month age</span>
+                        <ul class="ddabong">
+                            <li><i class="fas fa-thumbs-up blue"></i>5K</li>
+                            <li><i class="fas fa-thumbs-down"></i>0</li>
+                            <li><i class="fas fa-share"></i>Share</li>
+                            <li><i class="fas fa-plus fab"></i>Save</li>
+                            <li><i class="fa-solid fa-flag"></i>Report</li>
+                        </ul>
+                    </div>
+                    <!-- 채널정보 -->
+                    <div class="info">
+                        <div class="info-mark">
+                            <img
+                                class="face"
+                                src="image/art_16502430231724_6789b2.jpg"
+                            />
+                            <div class="channel">
+                                <span>드림코딩 by 엘리</span
+                                ><span>1M subscribers</span>
+                            </div>
+                        </div>
+                        <span class="subscribe">SUBSCRIBERS</span>
+                    </div>
+                </div>
+
+                <!-- 추천영상 -->
+                <div class="recommend">
+                    <span class="next">Up next</span>
+                    <div class="card">
+                        <img src="image/1.jpg" />
+                        <div class="card-tilte">
+                            <span
+                                >Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Nam adipisci labore odit
+                                quisquam obcaecati possimus sit nemo officiis
+                                mollitia accusantium, aliquid minima veritatis
+                                molestias non quas sed ipsam tempore modi?</span
+                            >
+                            <span>드림코딩 by 엘리</span>
+                            <span>82K views</span>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <div class="card">
+                        <img src="image/2.jpg" />
+                        <div class="card-tilte">
+                            <span
+                                >Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Nam adipisci labore odit
+                                quisquam obcaecati possimus sit nemo officiis
+                                mollitia accusantium, aliquid minima veritatis
+                                molestias non quas sed ipsam tempore modi?</span
+                            >
+                            <span>드림코딩 by 엘리</span>
+                            <span>82K views</span>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <div class="card">
+                        <img src="image/3.jpg" />
+                        <div class="card-tilte">
+                            <span
+                                >Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Nam adipisci labore odit
+                                quisquam obcaecati possimus sit nemo officiis
+                                mollitia accusantium, aliquid minima veritatis
+                                molestias non quas sed ipsam tempore modi?</span
+                            >
+                            <span>드림코딩 by 엘리</span>
+                            <span>82K views</span>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

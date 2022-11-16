@@ -1,0 +1,189 @@
+@charset 'utf-8';
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+    /* color */
+    --color-black: rgb(5, 5, 5);
+    --color-red: rgb(252, 38, 0);
+    --color-white: rgb(243, 240, 240);
+    --color-blue: rgb(70, 104, 255);
+    --color-grey: rgb(124, 122, 122);
+
+    /* font-size */
+    --font-size: 15px;
+    --font-size-verysm: 6px;
+    --font-size-sm: 12px;
+    --font-size-la: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+html {
+    font-size: var(--font-size);
+}
+
+body {
+    font-family: "Roboto", "Noto Sans KR", sans-serif;
+    font-size: var(--font-size);
+    line-height: 24px;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+.container {
+    height: 100vh;
+}
+/* 헤더 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.header .logo i {
+    color: var(--color-red);
+    margin-right: 8px;
+}
+.header .search a {
+    color: var(--color-white);
+    margin-left: 8px;
+}
+/* 비디오 */
+.video {
+    height: 60vh;
+}
+/* 타이틀 */
+.title {
+    display: flex;
+    flex-direction: column;
+    margin: 12px 24px;
+}
+.title .hash {
+    font-size: var(--font-size-verysm);
+    color: var(--color-grey);
+}
+.title .content {
+    display: flex;
+    font-size: var(--font-size);
+    align-items: center;
+}
+.title .content span {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.title .content .toggle-btn {
+    border: none;
+    outline: none;
+    background-color: white;
+}
+.title .content .toggle-btn i {
+    height: 100%;
+}
+.title .view {
+    font-size: var(--font-size-verysm);
+    color: var(--color-grey);
+}
+.title .ddabong {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    font-size: var(--font-size-la);
+}
+.title .ddabong li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title .ddabong i {
+    color: var(--color-grey);
+    padding-bottom: 8px;
+}
+.title .ddabong .blue {
+    color: var(--color-blue);
+}
+/* 채널정보 */
+.info {
+    margin: 0 24px;
+    padding: 6px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--color-grey);
+    border-bottom: 1px solid var(--color-grey);
+}
+.info-mark {
+    display: flex;
+}
+.info .face {
+    margin-right: 12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.info .channel {
+    display: flex;
+    flex-direction: column;
+}
+/* 추천영상 */
+.recommend {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 24px;
+}
+.recommend .next {
+    margin-bottom: 8px;
+    font-size: var(--font-size);
+    color: var(--color-grey);
+}
+.recommend .card {
+    display: flex;
+    margin-bottom: 24px;
+}
+.recommend .card img {
+    width: 200px;
+    height: 120px;
+}
+.recommend .card .card-tilte {
+    margin: 0 12px;
+}
+.recommend .card .card-tilte span {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.recommend .card .card-tilte span:nth-child(2),
+.recommend .card .card-tilte span:nth-child(3) {
+    color: var(--color-grey);
+}
+@media screen and (min-width: 768px) {
+    .wide-mode {
+        display: flex;
+    }
+    .wide-mode-right,
+    .wide-mode .recommend {
+        flex-basis: 50%;
+    }
+}
